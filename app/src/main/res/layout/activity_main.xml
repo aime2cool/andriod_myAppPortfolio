@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,51 +8,45 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    android:background="#E0E0E0"
+    android:background="@color/colorMain"
     tools:context="com.example.yamgao.myappportfolio.MainActivity">
 
     <TextView
         android:id="@+id/my_app_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:textSize="25sp"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:text="My Nanodegree Apps!" />
+        android:text="@string/title" />
     <Button
         android:id="@+id/button_1"
-        android:text="Popular Movies"
-        android:layout_below="@id/my_app_title"
+        android:text="@string/project1"
         style="@style/MyPortfolio"
         android:onClick="onClick" />
     <Button
         android:id="@+id/button_2"
-        android:text="Stock Hawk"
-        android:layout_below="@id/button_1"
+        android:text="@string/project2"
         style="@style/MyPortfolio"
         android:onClick="onClick" />
     <Button
         android:id="@+id/button_3"
-        android:text="Build it Bigger"
-        android:layout_below="@id/button_2"
+        android:text="@string/project3"
         style="@style/MyPortfolio"
         android:onClick="onClick" />
     <Button
         android:id="@+id/button_4"
-        android:text="Make Your App Material"
-        android:layout_below="@id/button_3"
+        android:text="@string/project4"
         style="@style/MyPortfolio"
         android:onClick="onClick" />
     <Button
         android:id="@+id/button_5"
-        android:text="Go Ubiquitous"
-        android:layout_below="@id/button_4"
+        android:text="@string/project5"
         style="@style/MyPortfolio"
         android:onClick="onClick" />
     <Button
         android:id="@+id/button_6"
-        android:text="Capstone"
-        android:layout_below="@id/button_5"
+        android:text="@string/project6"
         style="@style/MyPortfolio"
         android:onClick="onClick" />
-</RelativeLayout>
+</LinearLayout>
